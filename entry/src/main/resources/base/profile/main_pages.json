@@ -1,0 +1,20 @@
+{
+  "src": [
+    "pages/lesson1/Indexx",
+    "pages/lesson1/Chat",
+    "pages/lesson1/AboutPage",
+    "pages/lesson1/ShouYe",
+    "pages/lesson1/Lunbo",
+    "pages/lesson2/Notification",
+    "pages/lesson2/Reminder",
+    "pages/lesson2/workAlerm",
+    "pages/lesson2/workAdd",
+    "pages/lesson2/Window",
+    "pages/lesson2/WindowOn",
+    "pages/lesson2/WindowNewWindow",
+    "pages/lesson2/WindowLocal",
+    "pages/work/tbMessage",
+    "pages/work/tbChat",
+    "pages/lesson3/display"
+  ]
+}
