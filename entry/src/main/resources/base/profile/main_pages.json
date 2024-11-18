@@ -15,6 +15,11 @@
     "pages/lesson2/WindowLocal",
     "pages/work/tbMessage",
     "pages/work/tbChat",
-    "pages/lesson3/display"
+    "pages/lesson3/display",
+    "pages/lesson3/Safe",
+    "pages/lesson3/Chat2",
+    "pages/lesson3/ballZhuan",
+    "pages/lesson3/zhiboJian",
+    "pages/lesson3/yuYueZB"
   ]
 }

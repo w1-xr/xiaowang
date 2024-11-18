@@ -48,7 +48,10 @@ struct Display {
 //5.display.getFoldDisplayMode 获取可折叠设备的显示模式（主屏幕/子屏幕。。。）
       Button("getFoldDisplayMode")
         .onClick(async ()=>{
-
+          let FoldCreaseRegion=await display.getCurrentFoldCreaseRegion()
+          AlertDialog.show({
+            message:JSON.stringify(FoldCreaseRegion)
+          })
         })
     }
     .height('100%')
