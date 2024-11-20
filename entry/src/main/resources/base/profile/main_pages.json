@@ -20,6 +20,7 @@
     "pages/lesson3/Chat2",
     "pages/lesson3/ballZhuan",
     "pages/lesson3/zhiboJian",
-    "pages/lesson3/yuYueZB"
+    "pages/lesson3/yuYueZB",
+    "pages/lesson4/axiosPage"
   ]
 }

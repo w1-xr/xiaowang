@@ -3,6 +3,7 @@ import { hilog } from '@kit.PerformanceAnalysisKit';
 import { window } from '@kit.ArkUI';
 import { startStore } from '../utils/startStore';
 import { AdvertClass, advertStore } from '../utils/advertStore';
+import { notificationManager } from '@kit.NotificationKit';
 
 export default class EntryAbility extends UIAbility {
   onCreate(want: Want, launchParam: AbilityConstant.LaunchParam): void {
@@ -68,9 +69,10 @@ export default class EntryAbility extends UIAbility {
     hilog.info(0x0000, 'testTag', '%{public}s', 'Ability onForeground');
   }
 
-  onBackground(): void {
+  async onBackground(): Promise<void> {
     // Ability has back to background
     hilog.info(0x0000, 'testTag', '%{public}s', 'Ability onBackground');
-
+    let count=await notificationManager.getActiveNotificationCount()
+    notificationManager.setBadgeNumber(count)
   }
 }
