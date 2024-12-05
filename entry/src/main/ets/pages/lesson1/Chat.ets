@@ -12,7 +12,6 @@ struct Chat {
   @State chatList:chatClass[]=[]//内容区数组
   @State sendWord:string=""//我发送的信息
   scroller:Scroller=new Scroller()
-
   //1.utils中定义
   //2.new出来
   store:chatStore=new chatStore(getContext(this))

@@ -8,8 +8,6 @@ export class chatClass{
   id:string='';//消息的唯一标识
   selfFlag:boolean=true;//是否是自身的消息
 }
-
-
 export class chatStore{
   //1.定义context
   context:Context
@@ -17,19 +15,16 @@ export class chatStore{
   constructor(context: Context) {
     this.context = context;
   }
-
   //2.getStore的方法们
   async getStore(){
     return await dataPreferences.getPreferences(this.context,"my_chatSql")
   }
-
   //3.存
   async putChat(data:string){
     const store=await this.getStore()
     await store.put("myChat",data)
     await store.flush()
   }
-
   //4.取
   async getChat(){
     const store=await this.getStore()
